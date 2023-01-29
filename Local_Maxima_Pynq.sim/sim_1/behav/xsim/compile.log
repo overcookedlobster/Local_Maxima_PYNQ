@@ -1,0 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_1_0/sim/design_1_blk_mem_gen_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_vio_0_0/sim/design_1_vio_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_vio_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_ila_0_0/sim/design_1_ila_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_ila_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_1_1/sim/design_1_blk_mem_gen_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3040/counter_r_out_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_r_out_hdmi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3040/hdmi_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_encoder
+INFO: [VRFC 10-311] analyzing module TMDS_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3040/sr_r_out_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sr_r_out_hdmi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3040/out_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module out_hdmi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_out_hdmi_zybo_zirly_0_0/sim/design_1_out_hdmi_zybo_zirly_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_out_hdmi_zybo_zirly_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.srcs/sim_1/new/tb_design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_design_1

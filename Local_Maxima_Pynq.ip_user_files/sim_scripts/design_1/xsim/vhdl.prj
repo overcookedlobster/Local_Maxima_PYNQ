@@ -1,0 +1,18 @@
+vhdl xil_defaultlib  \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/DVI_Constants.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/ChannelBond.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/SyncAsync.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/GlitchFilter.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/TWI_SlaveCtl.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/EEPROM_8b.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/InputSERDES.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/PhaseAlign.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/ResyncToBUFG.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/SyncAsyncReset.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/SyncBase.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/TMDS_Clocking.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/TMDS_Decoder.vhd" \
+"../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/src/dvi2rgb.vhd" \
+"../../../bd/design_1/ip/design_1_hdmi_in_0_2/src/dvi2rgb_0/sim/dvi2rgb_0.vhd" \
+
+nosort

@@ -1,0 +1,461 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/overcookedlobster/Documents/School/VLSI/Lainnya/local-maxima-zybo/Local_Maxima_Zybo.srcs/sources_1/imports/VLSI'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/overcookedlobster/Documents/School/VLSI/in_hdmi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/overcookedlobster/Documents/School/VLSI/hdmi_out'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/overcookedlobster/Documents/School/VLSI/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1757069
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2023.438 ; gain = 372.738 ; free physical = 12145 ; free virtual = 54350
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1425.183; parent = 1226.387; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3054.855; parent = 2026.410; children = 1028.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/sources_1/imports/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_blk_mem_gen_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_blk_mem_gen_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_1_0' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_blk_mem_gen_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_1_0' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_blk_mem_gen_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_1_1' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_blk_mem_gen_1_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_1_1' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_blk_mem_gen_1_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'locked' of module 'design_1_clk_wiz_0' is unconnected for instance 'clk_wiz' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:103]
+WARNING: [Synth 8-7023] instance 'clk_wiz' of module 'design_1_clk_wiz_0' has 6 connections declared, but only 5 given [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:103]
+INFO: [Synth 8-6157] synthesizing module 'design_1_hdmi_in_0_2' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_hdmi_in_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_hdmi_in_0_2' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_hdmi_in_0_2_stub.v:5]
+WARNING: [Synth 8-7071] port 'pclk_locked' of module 'design_1_hdmi_in_0_2' is unconnected for instance 'hdmi_in_0' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:109]
+WARNING: [Synth 8-7023] instance 'hdmi_in_0' of module 'design_1_hdmi_in_0_2' has 12 connections declared, but only 11 given [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:109]
+INFO: [Synth 8-6157] synthesizing module 'design_1_local_maxima_zybo_0_0' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_local_maxima_zybo_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_local_maxima_zybo_0_0' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_local_maxima_zybo_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_out_hdmi_0_0' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_out_hdmi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_out_hdmi_0_0' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_out_hdmi_0_0_stub.v:5]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:143]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_0_0' [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_vio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_0_0' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/.Xil/Vivado-1756989-overcookedlobster-nvme/realtime/design_1_vio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/sources_1/imports/design_1_wrapper.v:12]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'local_maxima_zybo_0'. This will prevent further optimization [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:121]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:143]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'blk_mem_gen_2'. This will prevent further optimization [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:94]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'hdmi_in_0'. This will prevent further optimization [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/synth/design_1.v:109]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2101.375 ; gain = 450.676 ; free physical = 12223 ; free virtual = 54429
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1425.183; parent = 1226.387; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3129.824; parent = 2101.379; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2119.188 ; gain = 468.488 ; free physical = 12223 ; free virtual = 54428
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1425.183; parent = 1226.387; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3147.637; parent = 2119.191; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2119.188 ; gain = 468.488 ; free physical = 12223 ; free virtual = 54428
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1425.183; parent = 1226.387; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3147.637; parent = 2119.191; children = 1028.445
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2119.188 ; gain = 0.000 ; free physical = 12218 ; free virtual = 54423
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_local_maxima_zybo_0_0/design_1_local_maxima_zybo_0_0/design_1_local_maxima_zybo_0_0_in_context.xdc] for cell 'design_1_i/local_maxima_zybo_0'
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_local_maxima_zybo_0_0/design_1_local_maxima_zybo_0_0/design_1_local_maxima_zybo_0_0_in_context.xdc] for cell 'design_1_i/local_maxima_zybo_0'
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_1'
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_1'
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_1/design_1_blk_mem_gen_1_1/design_1_blk_mem_gen_1_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_2'
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_1/design_1_blk_mem_gen_1_1/design_1_blk_mem_gen_1_1_in_context.xdc] for cell 'design_1_i/blk_mem_gen_2'
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc] for cell 'design_1_i/out_hdmi_0'
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc] for cell 'design_1_i/out_hdmi_0'
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc] for cell 'design_1_i/hdmi_in_0'
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc] for cell 'design_1_i/hdmi_in_0'
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0_addrb[0]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:55]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0_addrb[1]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:56]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0_addrb[2]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:57]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0_addrb[3]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:58]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0_addrb[4]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:59]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0_addrb[5]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0_addrb[6]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:61]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0_addrb[7]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:62]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0_addrb[8]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:63]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[121]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[41]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:65]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[25]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[105]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[137]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[153]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[169]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:70]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[185]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:71]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[281]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:72]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[265]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:73]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[249]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:74]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[233]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:75]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[217]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:76]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[201]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:77]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[89]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:78]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[73]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:79]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[57]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[8]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:81]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[297]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:82]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[313]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:83]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[329]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[345]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:85]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[377]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:86]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[361]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:87]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[393]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:88]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[409]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:89]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[417]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:90]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[433]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:91]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[449]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[465]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:93]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[481]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:94]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[497]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:95]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[513]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[529]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:97]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[545]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:98]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[561]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:99]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[577]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[593]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:101]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[609]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:102]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[625]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:103]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[104]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:104]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[24]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:105]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[40]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:106]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[56]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:107]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[120]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:108]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[136]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:109]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[152]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:110]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[168]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:111]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[184]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:112]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[280]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:113]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[264]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:114]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[248]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:115]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[232]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:116]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[216]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:117]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[200]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:118]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[88]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:119]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[72]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:120]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[7]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:121]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[296]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:122]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[312]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:123]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[328]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:124]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[344]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:125]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[376]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:126]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[360]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:127]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[392]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:128]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[408]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:129]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[416]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:130]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[432]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[448]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:132]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[464]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:133]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[480]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:134]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[496]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:135]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[512]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:136]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[528]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:137]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[544]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:138]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[560]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:139]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[576]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:140]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[592]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:141]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[608]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:142]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[624]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:143]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[119]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:144]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[23]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:145]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[39]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:146]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[103]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[135]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:148]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[151]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:149]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[167]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:150]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[183]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:151]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[279]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:152]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[263]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:153]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/out_hdmi_zybo_zirly_0/inst/register[247]'. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:154]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc:154]
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2198.062 ; gain = 0.000 ; free physical = 12129 ; free virtual = 54335
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2198.062 ; gain = 0.000 ; free physical = 12129 ; free virtual = 54335
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12201 ; free virtual = 54407
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1425.183; parent = 1226.387; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12201 ; free virtual = 54407
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1425.183; parent = 1226.387; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSn_0[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSn_0[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSn_0[1]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSn_0[1]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSn_0[2]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSn_0[2]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSn_clock_0. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSn_clock_0. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp_0[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp_0[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp_0[1]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp_0[1]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp_0[2]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp_0[2]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp_clock_0. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp_clock_0. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0/design_1_out_hdmi_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_tmds_0_clk_n. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_tmds_0_clk_n. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_tmds_0_clk_p. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_tmds_0_clk_p. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_tmds_0_data_n[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_tmds_0_data_n[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_tmds_0_data_n[1]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_tmds_0_data_n[1]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_tmds_0_data_n[2]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_tmds_0_data_n[2]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_tmds_0_data_p[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_tmds_0_data_p[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_tmds_0_data_p[1]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_tmds_0_data_p[1]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_tmds_0_data_p[2]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_tmds_0_data_p[2]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.gen/sources_1/bd/design_1/ip/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2/design_1_hdmi_in_0_2_in_context.xdc, line 16).
+Applied set_property MARK_DEBUG = false for design_1_i/local_maxima_zybo_0_write_enable_hdmi. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc, line 54).
+Applied set_property MARK_DEBUG = false for design_1_i/out_hdmi_0_addrb[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc, line 712).
+Applied set_property MARK_DEBUG = false for design_1_i/hdmi_in_0_addra[0]. (constraint file  /home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.srcs/constrs_1/new/zybo_lm.xdc, line 1375).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/local_maxima_zybo_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/blk_mem_gen_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/blk_mem_gen_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/out_hdmi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hdmi_in_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12201 ; free virtual = 54407
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1425.183; parent = 1226.387; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12209 ; free virtual = 54416
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1425.183; parent = 1226.387; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12196 ; free virtual = 54408
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1425.183; parent = 1226.387; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12098 ; free virtual = 54308
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1511.931; parent = 1313.177; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12098 ; free virtual = 54308
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1512.450; parent = 1313.696; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12090 ; free virtual = 54301
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1513.321; parent = 1314.567; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12090 ; free virtual = 54301
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1513.505; parent = 1314.751; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12090 ; free virtual = 54301
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1513.521; parent = 1314.767; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12090 ; free virtual = 54300
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1513.575; parent = 1314.821; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12090 ; free virtual = 54300
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1513.638; parent = 1314.884; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12090 ; free virtual = 54300
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1513.638; parent = 1314.884; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12090 ; free virtual = 54300
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1513.638; parent = 1314.884; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |design_1_blk_mem_gen_0_0       |         1|
+|2     |design_1_blk_mem_gen_1_0       |         1|
+|3     |design_1_blk_mem_gen_1_1       |         1|
+|4     |design_1_clk_wiz_0             |         1|
+|5     |design_1_hdmi_in_0_2           |         1|
+|6     |design_1_local_maxima_zybo_0_0 |         1|
+|7     |design_1_out_hdmi_0_0          |         1|
+|8     |design_1_vio_0_0               |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |design_1_blk_mem_gen_0       |     1|
+|2     |design_1_blk_mem_gen_1       |     2|
+|4     |design_1_clk_wiz             |     1|
+|5     |design_1_hdmi_in_0           |     1|
+|6     |design_1_local_maxima_zybo_0 |     1|
+|7     |design_1_out_hdmi_0          |     1|
+|8     |design_1_vio_0               |     1|
+|9     |IBUF                         |     1|
++------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12090 ; free virtual = 54300
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1513.669; parent = 1314.915; children = 198.796
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3194.496; parent = 2166.051; children = 1028.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2198.062 ; gain = 468.488 ; free physical = 12139 ; free virtual = 54349
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2198.062 ; gain = 547.363 ; free physical = 12139 ; free virtual = 54349
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2198.062 ; gain = 0.000 ; free physical = 12249 ; free virtual = 54460
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2198.062 ; gain = 0.000 ; free physical = 12192 ; free virtual = 54402
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 8adee844
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2198.062 ; gain = 867.020 ; free physical = 12396 ; free virtual = 54605
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint '/home/overcookedlobster/Documents/School/VLSI/Local_Maxima_Pynq/Local_Maxima_Pynq.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 29 20:37:20 2023...

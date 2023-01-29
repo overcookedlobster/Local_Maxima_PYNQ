@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ipshared/7698" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
+
+sv xil_defaultlib  --include "../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ipshared/7698" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3d18/Local_Maxima_640_480/local_maxima.sv" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3d18/Local_Maxima_640_480/process.sv" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3d18/Local_Maxima_Basys3/Local_Maxima_Basys3.srcs/sources_1/new/top.sv" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_local_maxima_zybo_0_0/sim/design_1_local_maxima_zybo_0_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../Local_Maxima_Zybo.gen/sources_1/bd/design_1/ipshared/7698" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_1_0/sim/design_1_blk_mem_gen_1_0.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_vio_0_0/sim/design_1_vio_0_0.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_ila_0_0/sim/design_1_ila_0_0.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_clk_wiz.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_1_1/sim/design_1_blk_mem_gen_1_1.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3040/counter_r_out_hdmi.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3040/hdmi_encoder.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3040/sr_r_out_hdmi.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ipshared/3040/out_hdmi.v" \
+"../../../../Local_Maxima_Zybo.ip_user_files/bd/design_1/ip/design_1_out_hdmi_zybo_zirly_0_0/sim/design_1_out_hdmi_zybo_zirly_0_0.v" \
+"../../../../Local_Maxima_Zybo.srcs/sim_1/new/tb_design_1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

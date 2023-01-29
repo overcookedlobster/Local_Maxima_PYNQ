@@ -1,0 +1,9 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_design_1_behav xil_defaultlib.tb_design_1 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'TMDSp_clock_0' on this module [/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.srcs/sim_1/new/tb_design_1.v:33]
+ERROR: [VRFC 10-3180] cannot find port 'TMDSp_0' on this module [/home/overcookedlobster/Documents/School/VLSI/Lainnya/Local_Maxima_Zybo/Local_Maxima_Zybo.srcs/sim_1/new/tb_design_1.v:32]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
